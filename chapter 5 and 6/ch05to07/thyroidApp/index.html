@@ -170,14 +170,15 @@
       data-iconpos="left" data-inline="true">Menu</a>
       <a href="#pageAbout" data-role="button" data-icon="info"
       data-iconpos="right" data-inline="true">Info</a>
-      <h1>Thyroid Cancer Aide</h1>
+      <h1>Power Consumption </h1> <!--CHANGED HEADING - TASHA-->
     </div>
     <div data-role="content">
       <div data-role="controlgroup">
-        <a href="#pageUserInfo" data-role="button">User Info</a>
-        <a href="#pageRecords" data-role="button">Records</a>
-        <a href="#pageGraph" data-role="button">Graph</a>
-        <a href="#pageAdvice" data-role="button">Suggestions</a>
+        <a href="#pageUserInfo" data-role="button">Data Entry</a> <!--CHANGED TO DATA ENTRY - TASHA-->
+        <a href="#pageRecords" data-role="button">Storage</a> <!--CHANGED TO STORAGE - TASHA-->
+        <!-- ONLY USING TWO CHOICES FOR THE POWER CONSUMPTION MODEL - TASHA -->
+        <!-- <a href="#pageGraph" data-role="button">Graph</a>
+        <a href="#pageAdvice" data-role="button">Suggestions</a> -->
       </div>
     </div>
   </div>
@@ -223,17 +224,20 @@
       <form id="frmNewRecordForm" action="">
         <div data-role="fieldcontain">
           <div data-role="fieldcontain">
-            <label for="datExamDate">Date: </label>
+            <label for="datExamDate">Date: </label>  <!--LEAVING DATE AS-IS - TASHA-->
             <input type="date" name="datExamDate" data-mini="false"
             id="datExamDate" value="">
           </div>
+
           <div data-role="fieldcontain">
-            <label for="txtTSH"><abbr title="Thyroid-stimulating hormone">TSH (mIU/L): </abbr>
+            <label for="txtTSH"><abbr title="Thyroid-stimulating hormone">MGW: </abbr> <!--CHANGE TO MGW - TASHA-->
             </label>
             <input type="number" step="0.01" placeholder="0" name="txtTSH"
             data-mini="false" id="txtTSH" value="">
           </div>
-          <div data-role="fieldcontain">
+
+            <!-- COMMENT OUT LAST TWO ITEMS FROM TYROID - TASHA -->
+          <!-- <div data-role="fieldcontain">
             <label for="txtThyroglobulin">Thyroglobulin (µg/L)[Optional]: </label>
             <input type="number" step="0.01" placeholder="0" name="txtThyroglobulin"
             data-mini="false" id="txtThyroglobulin"
@@ -245,12 +249,12 @@
             <input type="number" step="0.01" placeholder="0" name="txtSynthroidDose"
             data-mini="false" id="txtSynthroidDose"
             value="">
-          </div>
+          </div> -->
         </div>
-        <input type="submit" id="btnSubmitRecord" value="">
+        <input type="submit" id="btnSubmitRecord" value="Update"> <!--ADDED VALUE FOR UPDATE-->
       </form>
     </div>
-    <p>&nbsp;&nbsp;100 microgram = .0001 gram</p>
+    <!-- <p>&nbsp;&nbsp;100 microgram = .0001 gram</p> -->
   </div>
 
 

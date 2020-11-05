@@ -99,14 +99,16 @@ function loadUserInformation() {
       user.TSHRange = "C: 0.35-2.0 mIU/L";
     }
 
+    // REMOVED + AND ADDED ); TO END OF USER.NEWPASSWORD - TASHA
+    // COMMENTED OUT CANCERTYPE, CANCERSTAGE AND TSHRANGE - TASHA
     $("#divUserSection").append("User's Name:" +
       user.FirstName + " " + user.LastName +
       "<br>Age: " + age +
       "<br>Health Card Number: " + user.HealthCardNumber +
-      "<br>New Password : " + user.NewPassword +
-      "<br>Cancer Type: " + user.CancerType +
-      "<br>Cancer Stage: " + user.CancerStage +
-      "<br>TSH Range: " + user.TSHRange);
+      "<br>New Password : " + user.NewPassword );
+      // "<br>Cancer Type: " + user.CancerType +
+      // "<br>Cancer Stage: " + user.CancerStage +
+      // "<br>TSH Range: " + user.TSHRange);
     $("#divUserSection").append(
       "<br><a href='#pageUserInfo' data-mini='true' data-role='button' data-icon='edit' data-iconpos='left' data-inline='true' >Edit Profile</a>"
     );
